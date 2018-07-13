@@ -8,11 +8,6 @@ body {
 	color: rgba(0,0,0,0.87);
 }
 
-.container {
-	max-width: 60%;
-	margin: auto;
-}
-
 .bigbox {
 	padding: 2em 0;
 }
@@ -51,20 +46,17 @@ h2 {
 .bigicon {
 background: #1976D2;
 padding: 1em;
-margin-right: 1em;
 margin-bottom: 0.5em;
-display: inline-block;
 border-radius: 2px;
 transition: all 0.2s ease-in-out;
 text-align: center;
-box-shadow: 5px 5px #EEE;
 text-decoration: none;
+display: block;
 }
 
 .bigicon:hover {
 	background: #0D47A1;
 	transform: scale(0.95);
-	box-shadow: 3px 3px #DDD;
 }
 
 .icon {
