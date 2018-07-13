@@ -1,18 +1,26 @@
-html, body {
-	height: 100%;
+/** CSS RESETS **/
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+/** END CSS RESETS **/
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 1rem;
 	color: rgba(0,0,0,0.87);
 }
 
-.bigbox {
+section, footer {
 	padding: 2em 0;
 }
 
-.biggerbox {
+header {
 	padding: 5em 0;
 }
 
@@ -86,7 +94,23 @@ p {
 		font-size: 2rem;
 	}
 
-	.biggerbox {
+	header {
 		padding: 2.5rem 0;
+	}
+
+	.bigicon {
+		overflow: hidden
+	}
+
+	.icon {
+		float: left;
+		height: 1.5rem;
+		width: 1.5rem;
+	}
+
+	.description {
+		margin-top: 0.25rem;
+		text-align: left;
+		margin-left: 3em;
 	}
 }
