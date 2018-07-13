@@ -1,0 +1,86 @@
+html, body {
+	height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	color: rgba(0,0,0,0.87);
+}
+
+.container {
+	max-width: 60%;
+	margin: auto;
+}
+
+.bigbox {
+	padding: 2em 0;
+}
+
+.biggerbox {
+		padding: 5em 0;
+}
+
+.gris {
+	background: #EEE;
+}
+
+.warn {
+	background: #EAE8BA;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Roboto', sans-serif;
+     font-weight:  400;
+    margin: 0;
+}
+
+h1 {
+	font-size: 3.5rem;
+	margin-bottom: 0.5rem;
+}
+
+h2 {
+	margin-bottom: 0.5rem;
+}
+
+.sub {
+	font-size: 1.5rem;
+}
+
+.bigicon {
+background: #1976D2;
+padding: 1em;
+margin-right: 1em;
+margin-bottom: 0.5em;
+display: inline-block;
+border-radius: 2px;
+transition: all 0.2s ease-in-out;
+text-align: center;
+box-shadow: 5px 5px #EEE;
+text-decoration: none;
+}
+
+.bigicon:hover {
+	background: #0D47A1;
+	transform: scale(0.95);
+	box-shadow: 3px 3px #DDD;
+}
+
+.icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: white;
+  
+}
+
+.icons {
+}
+
+.description {
+	color: white;
+	margin-top: 1rem;
+}
