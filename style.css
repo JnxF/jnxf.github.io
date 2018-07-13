@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
 	color: rgba(0,0,0,0.87);
 }
@@ -13,7 +13,7 @@ body {
 }
 
 .biggerbox {
-		padding: 5em 0;
+	padding: 5em 0;
 }
 
 .gris {
@@ -25,9 +25,9 @@ body {
 }
 
 h1, h2, h3, h4, h5{
-    font-family: 'Roboto', sans-serif;
-     font-weight:  400;
-    margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight:  400;
+	margin: 0;
 }
 
 h1 {
@@ -44,14 +44,14 @@ h2 {
 }
 
 .bigicon {
-background: #1976D2;
-padding: 1em;
-margin-bottom: 0.5em;
-border-radius: 2px;
-transition: all 0.2s ease-in-out;
-text-align: center;
-text-decoration: none;
-display: block;
+	background: #1976D2;
+	padding: 1em;
+	margin-bottom: 0.5em;
+	border-radius: 2px;
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+	text-decoration: none;
+	display: block;
 }
 
 .bigicon:hover {
@@ -60,13 +60,13 @@ display: block;
 }
 
 .icon {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: white;
-  
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: white;
+	
 }
 
 .icons {
@@ -75,4 +75,18 @@ display: block;
 .description {
 	color: white;
 	margin-top: 1rem;
+}
+
+p {
+	line-height: 1.5
+}
+
+@media (max-width:575px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	.biggerbox {
+		padding: 2.5rem 0;
+	}
 }
