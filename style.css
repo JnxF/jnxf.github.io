@@ -11,6 +11,10 @@ body, html {
 
 
 /** END CSS RESETS **/
+html {
+	font-size: 1.25rem;
+	font-size: calc(1rem + 4 * ((100vw - 320px) / 1280));
+}
 body {
 	font-family: 'Roboto', sans-serif;
 	color: rgba(0,0,0,0.87);
@@ -56,7 +60,7 @@ h2 {
 	padding: 1em;
 	margin-bottom: 0.5em;
 	border-radius: 2px;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out, font-size 1ms;
 	text-align: center;
 	text-decoration: none;
 	display: block;
@@ -64,7 +68,7 @@ h2 {
 
 .bigicon:hover {
 	background: #0D47A1;
-	transform: scale(0.95);
+	transform: scale(0.98);
 }
 
 .icon {
@@ -83,6 +87,10 @@ h2 {
 .description {
 	color: white;
 	margin-top: 1rem;
+}
+
+.nb {
+	margin-bottom: 0
 }
 
 p, li {
