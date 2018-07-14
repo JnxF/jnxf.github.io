@@ -20,9 +20,7 @@
     <meta name="description" content="Personal webpage of Francisco Martínez Lasaca">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"> -->
-    <link rel="stylesheet" href="bootstrap-grid.min.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,italic" rel="stylesheet">
 
 </head>
 
@@ -164,6 +162,23 @@
             &copy; Francisco Martínez Lasaca, 2018
         </div>
     </footer>
+
+	<noscript id="deferred-styles">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,italic" rel="stylesheet">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
 
 </body>
 
