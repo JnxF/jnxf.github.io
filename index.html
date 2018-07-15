@@ -85,7 +85,7 @@
                         <div class="description" id="email">
                             <script type="text/javascript">
                                 for (c = 0; c < 2 + (2 << 3); ++c) document.write(String.fromCharCode([102, 110, 110, 100, 119, 102, 105, 104, 72, 112, 119, 108, 117, 121, 60, 114, 127, 126][c] - c) + (c == 8 ? "&#8203;" : ""));
-                                document.getElementById("mailto").setAttribute("href", "mailto:" + document.getElementById("email").innerText);
+                                document.getElementById("mailto").setAttribute("href", "mailto:" + document.getElementById("email").innerText.replace("​", ""));
                             </script>
                             <noscript>
                                 Activate JS please!
