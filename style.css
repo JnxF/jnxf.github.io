@@ -28,6 +28,12 @@ body {
 	color: rgba(0,0,0,0.87);
 }
 
+a {
+	text-decoration: none;
+	border: none;
+	color: #1976D2;
+}
+
 section, footer {
 	padding: 2em 0;
 }
@@ -74,7 +80,7 @@ h2 {
 	display: block;
 }
 
-.bigicon:hover {
+.bigicon:hover, .bigicon:active {
 	background: #0D47A1;
 	transform: scale(0.98);
 }
