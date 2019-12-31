@@ -1,40 +1,58 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+	<!-- Google analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120920714-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-120920714-1');
+	</script>
+
 	<title>Francisco Martínez Lasaca</title>
 	<meta charset="utf-8">
 	<meta name="description" content="Personal webpage of Francisco Martínez Lasaca">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
-
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,italic&display=swap" rel="stylesheet">
-	
-	<link href="https://fonts.googleapis.com/css?family=Lora:700,400&display=swap" rel="stylesheet">
+	<!-- Styles -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,italic|Merriweather:700,400" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<!-- Jumbotron -->
 	<section class="hero is-medium is-awesome is-info">
 		<div class="hero-body">
 			<div class="container">
-				<h1 class="title is-2">
-					Francisco Martínez Lasaca
-				</h1>
-				<h2 class="subtitle is-4">
-					ROS programmer and MSc Computer Science student
-				</h2>
-
+				<h1 class="title is-2">Francisco Martínez Lasaca</h1>
+				<h2 class="subtitle is-4">ROS programmer and MSc Computer Science student</h2>
+				
 				<p class="markers">
-					<span class="item"><i class="fas fa-map-marker-alt"></i> Copenhagen, Denmark</span>
-					<span class="item"><i class="fas fa-briefcase"></i> <a href="https://square.itu.dk">SQUARE</a></span>
-					<span class="item"><i class="fab fa-github"></i> <a href="https://github.com/jnxf">jnxf</a></span>
-					<span class="item"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/fmlasaca/">fmlasaca</a></span>
+					<span class="item">
+						<i class="fas fa-map-marker-alt"></i>Copenhagen, Denmark
+					</span>
+					<span class="item">
+						<a href="https://square.itu.dk"><i class="fas fa-briefcase"></i>SQUARE</a>
+					</span>
+					<span class="item">
+						<a href="https://github.com/jnxf"><i class="fab fa-github"></i>jnxf</a>
+					</span>
+					<span class="item">
+						<a href="https://www.linkedin.com/in/fmlasaca/"><i class="fab fa-linkedin"></i>fmlasaca</a>
+					</span>
+					<span class="item">
+						<i class="fas fa-envelope"></i><script type="text/javascript">
+for(var w=["aA","bA","ZQ","Ig","dg","YQ","Pg","bA","YQ","dA","Og","YQ","cg","Zg","Lg","ZQ","bQ","Lg","Lw","cw","dg","bA","PQ","bw","YQ","ZQ","bQ","bQ","Yw","bQ","IA","YQ","PA","ZQ","ZA","PA","Yw","Zg","cw","Ig","Zg","QA","bQ","YQ","YQ","YQ","YQ","QA","ZA","ZQ","aQ","Pg"],t=[3,12,34,8,47,39,51,21,41,13,15,24,4,19,44,29,9,27,49,23,30,38,7,14,26,46,33,37,42,20,2,10,48,5,45,0,25,6,40,31,36,35,16,1,43,22,50,18,28,17,11,32],r=new Array,i=0;i<t.length;i++)r[t[i]]=w[i];for(var i=0;i<r.length;i++)document.write(atob(r[i]+"=="));
+// --></script><noscript>My email (only within braces): [me] [@] [f]rancisco[m]artinez[lasaca.dev]</noscript>
+					</span>
 				</p>
 			</div>
 		</div>
 	</section>
 
+	<!-- Education -->
 	<section class="hero is-light">
 		<div class="hero-body">
 			<div class="container">
@@ -48,7 +66,7 @@
 						</div>
 						<div class="media-content">
 							<p class="has-text-weight-semibold">Master in Computer Science (2019 &ndash;)</p>
-							<p><span style="font-weight: 300; text-transform: small-caps;">IT University of Copenhagen (Copenhagen, Denmark)</span></p>
+							<p><span class="ubication">IT University of Copenhagen (Copenhagen, Denmark)</span></p>
 						</div>
 					</div>
 					
@@ -63,7 +81,7 @@
 						</div>
 						<div class="media-content">
 							<p class="has-text-weight-semibold">Bachelor Degree in Informatics Engineering (2015 &ndash; 2019)</p>
-							<p><span style="font-weight: 300; text-transform: small-caps;">Polytechnical University of Catalonia (Barcelona, Spain)</span></p>
+							<p><span class="ubication">Polytechnical University of Catalonia (Barcelona, Spain)</span></p>
 
 							<hr>
 							<ul class="content">
@@ -82,6 +100,7 @@
 		</div>
 	</section>
 
+	<!-- Work experience -->
 	<section class="hero is-light is-bold">
 		<div class="hero-body">
 			<div class="container">
@@ -98,9 +117,9 @@
 							<p class="has-text-weight-semibold">ROS Developer (October 2019 &ndash;)</p>
 
 							<div class="content">
-								<p><span style="font-weight: 300; text-transform: small-caps;">IT University of Copenhagen, CS Department, <abbr title="Software Quality Research">SQUARE</abbr> group (Copenhagen, Denmark)</span></p>
+								<p><span class="ubication">IT University of Copenhagen, CS Department, <abbr title="Software Quality Research">SQUARE</abbr> group (Copenhagen, Denmark)</span></p>
 
-								<p><span class="tag is-dark">ROS</span> <span class="tag is-dark">Docker</span> <span class="tag">linters</span> <span class="tag">bash</span> </p>
+								<p class="tags"><span class="tag is-dark">ROS</span> <span class="tag is-dark">Docker</span> <span class="tag">linters</span> <span class="tag">bash</span> </p>
 
 							</div>
 							<hr>
@@ -114,7 +133,6 @@
 
 
 				<div class="box">
-
 					<div class="media">
 						<div class="media-left">
 							<p class="image is-48x48">
@@ -126,9 +144,9 @@
 						<div class="media-content">
 							<p class="has-text-weight-semibold">Full Stack developer (September 2017 &ndash; January 2018)</p>
 							<div class="content">
-								<p><span style="font-weight: 300; text-transform: small-caps;">inLab FIB (Barcelona, Spain)</span></p>
+								<p><span class="ubication">inLab FIB (Barcelona, Spain)</span></p>
 
-								<p><span class="tag is-dark">Drupal</span> <span class="tag is-dark">PHP</span> <span class="tag">git</span></p>
+								<p class="tags"><span class="tag is-dark">Drupal</span> <span class="tag is-dark">PHP</span> <span class="tag">git</span></p>
 
 							</div>
 							<hr>
@@ -137,14 +155,12 @@
 							</ul>
 						</div>
 					</div>
-
 				</div> 
-
-				
 			</div>
 		</div>
 	</section>
 
+	<!-- Languages -->
 	<section class="hero is-light">
 		<div class="hero-body">
 			<div class="container">
@@ -167,17 +183,17 @@
 							<tr>
 								<td>Catalan / Valencian</td>
 								<td><span class="tag is-dark">Native</span></td>
-								<td>Coneixements de Valencià Grau Superior, C2 (<abbr title="Junta Qualificadora de Coneixements de Valencià">JQCV</abbr>)</td>
+								<td>Coneixements de Valencià Grau Superior, C2 (<abbr title="Junta Qualificadora de Coneixements de Valencià">JQCV</abbr>), 2016</td>
 							</tr>
 							<tr>
 								<td>English</td>
 								<td><span class="tag is-dark">C1</span></td>
-								<td>Certificate in Advanced English (Cambridge University Press)</td>
+								<td>Certificate in Advanced English (Cambridge University Press), 2019</td>
 							</tr>
 							<tr>
 								<td>Danish</td>
 								<td><span class="tag is-dark">A1</span></td>
-								<td>Danskprøve A1.1 (UCplus)</td>
+								<td>Danskprøve A1.1 (UCplus), 2019</td>
 							</tr>
 							<tr>
 								<td>Italian</td>
@@ -200,15 +216,25 @@
 		</div>
 	</footer>
 
+	<script async src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120920714-1"></script>
 	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
+		// Background animation
+		var elem = document.getElementsByClassName("is-awesome")[0];
+
+		var x = 10;
+		var y = 0;
+		var prev = 0;
+
+		function step(timestamp) {
+			elem.style.backgroundPosition = x + "px " + y + "px";
+			x += (timestamp - prev) / 150
+			y += (timestamp - prev) / 150
+			prev = timestamp;
+			window.requestAnimationFrame(step);
 		}
-		gtag('js', new Date());
-		gtag('config', 'UA-120920714-1');
+
+		window.requestAnimationFrame(step);
 	</script>
 </body>
 </html>
