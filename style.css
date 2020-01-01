@@ -59,6 +59,10 @@ hr {
     text-shadow: .05em .05em rgba(255,255,255, .35);
 }
 
+h1 {
+    letter-spacing: 0.02em;
+}
+
 .column .box {
     height: 100%;
 }

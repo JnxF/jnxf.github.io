@@ -395,39 +395,33 @@
     <script async src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
     <script>
-    (function() {
-        // Jumbotron background animation
-        var elem = document.getElementsByClassName("is-awesome")[0];
-        var x = 0;
-        var y = 0;
-        var prev = 0;
-        function step(timestamp) {
-            elem.style.backgroundPosition = x + "px " + y + "px";
-            x += (timestamp - prev) / 150
-            y += (timestamp - prev) / 150
-            prev = timestamp;
+        (function() {
+            // Jumbotron background animation
+            var elem = document.getElementsByClassName("is-awesome")[0];
+            var x = 0;
+            var y = 0;
+            var prev = 0;
+            function step(timestamp) {
+                elem.style.backgroundPosition = x + "px " + y + "px";
+                x += (timestamp - prev) / 150
+                y += (timestamp - prev) / 150
+                prev = timestamp;
+                window.requestAnimationFrame(step);
+            }
             window.requestAnimationFrame(step);
-        }
-        window.requestAnimationFrame(step);
 
-        // Anchor links animation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+            // Anchor links animation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 });
+                // Prevent anchor links on URL
+                return false; 
             });
-            // Prevent anchor links on URL
-            return false; 
-        });
-    })();
-
-
-</script>
-
-<script>
-    
-</script>
+        })();
+    </script>
 </body>
 </html>
