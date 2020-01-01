@@ -5,6 +5,10 @@ body, .subtitle {
 h1, h2, h3, h4, h5, h6 {
     font-family: Merriweather , "Book Antiqua", Georgia;
 }
+
+h4 {
+    font-weight: bold
+}
  
 hr {
     margin: 0.75rem 0;
