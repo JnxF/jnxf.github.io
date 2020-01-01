@@ -31,6 +31,30 @@ hr {
     margin-right: 0.3rem;
 }
 
+.dot {
+    width: 1ex;
+    height: 1ex;
+    border: 1px solid rgba(50, 152, 220, 0.75);
+    background-color: rgba(55, 157, 221, 0.75);
+    border-radius: 100%;
+    animation: pulsate 1.5s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0.5;
+    display: inline-block;
+    vertical-align: middle
+}
+@keyframes pulsate {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
 .ubication {
     font-weight: 300;
 }
