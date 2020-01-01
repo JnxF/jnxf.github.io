@@ -29,6 +29,7 @@
                 <div class="navbar-end">
                     <a class="navbar-item" href="#education">Education</a>
                     <a class="navbar-item" href="#workeducation">Work Experience</a>
+                    <a class="navbar-item" href="#projects">Projects</a>
                     <a class="navbar-item" href="#languages">Languages</a>
                 </div>
             </div>
@@ -174,9 +175,9 @@
     <section class="hero is-light">
         <div class="hero-body">
             <div class="container">
-                <h3 class="title is-3" id="languages">Projects</h3>
+                <h3 class="title is-3" id="projects">Projects</h3>
                 <div class="columns is-multiline">
-                    
+
                     <!-- Drawploy -->
                     <div class="column is-one-third">
                         <div class="box">
@@ -406,6 +407,18 @@
             window.requestAnimationFrame(step);
         }
         window.requestAnimationFrame(step);
+    </script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
     </script>
 </body>
 </html>
