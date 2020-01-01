@@ -395,6 +395,8 @@
     <script async src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
     <script>
+    (function() {
+        // Jumbotron background animation
         var elem = document.getElementsByClassName("is-awesome")[0];
         var x = 0;
         var y = 0;
@@ -407,18 +409,23 @@
             window.requestAnimationFrame(step);
         }
         window.requestAnimationFrame(step);
-    </script>
 
-    <script>
+        // Anchor links animation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
-    });
-});
-    </script>
+    })();
+
+
+</script>
+
+<script>
+    
+</script>
 </body>
 </html>
