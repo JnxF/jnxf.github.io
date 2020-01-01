@@ -24,12 +24,13 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar is-dark  is-hidden-touch ">
+    <nav class="navbar is-dark is-hidden-touch">
         <div class="container">
             <div id="navMenu" class="navbar-menu">
                 <div class="navbar-start">
                     <a class="navbar-item" href="#education">Education</a>
                     <a class="navbar-item" href="#workeducation">Work Experience</a>
+                    <a class="navbar-item" href="#languages">Languages</a>
                 </div>
             </div>
         </div>
@@ -171,7 +172,7 @@
     <section class="hero is-light">
         <div class="hero-body">
             <div class="container">
-                <h3 class="title is-3">Languages</h3>
+                <h3 class="title is-3" id="languages">Languages</h3>
                 <div class="box">
                     <table class="table is-fullwidth is-hoverable">
                         <thead>
@@ -179,7 +180,7 @@
                                 <th>Language</th>
                                 <th></th>
                                 <th>Certificate</th>
-                            </tr>                           
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
@@ -224,13 +225,10 @@
     <script async src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
     <script>
-        // Background animation
         var elem = document.getElementsByClassName("is-awesome")[0];
-
         var x = 0;
         var y = 0;
         var prev = 0;
-
         function step(timestamp) {
             elem.style.backgroundPosition = x + "px " + y + "px";
             x += (timestamp - prev) / 150
@@ -238,7 +236,6 @@
             prev = timestamp;
             window.requestAnimationFrame(step);
         }
-
         window.requestAnimationFrame(step);
     </script>
 </body>
