@@ -40,6 +40,10 @@ hr {
     margin-left: 0;
 }
 
+.box-heavy {
+    border-left: 3px solid #3298dc;
+}
+
 .tag {
     border: 1px solid rgba(54, 54, 54, 0.25);
     font-family: Monaco, Consolas, monospace;
