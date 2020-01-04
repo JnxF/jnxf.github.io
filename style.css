@@ -27,7 +27,7 @@ hr {
     color: white;
 }
 
-.item svg {
+.item [class^="icon-"] {
     margin-right: 0.3rem;
 }
 
