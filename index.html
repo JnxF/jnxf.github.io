@@ -424,18 +424,6 @@
 
     <script>
         (function() {
-            // Jumbotron background animation
-            var elem = document.getElementsByClassName("is-awesome")[0];
-            var d = 0;
-            var prev = 0;
-            function step(timestamp) {
-                elem.style.backgroundPosition = d + "px " + d + "px";
-                d += (timestamp - prev) / 150
-                prev = timestamp;
-                window.requestAnimationFrame(step);
-            }
-            window.requestAnimationFrame(step);
-
             // Anchor links animation
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
