@@ -14,10 +14,8 @@ function draw() {
 	
 	let t = (millis() % 4000)
 	let rt = easing(map(t % 1000, 0, 999, 0, 1))
-	rt = rt * PI/4;
-	if (t >= 1000) rt += PI/4;
-	if (t >= 2000) rt += PI/4;
-	if (t >= 3000) rt += PI/4;
+	rt = rt * QUARTER_PI;
+	rt += Math.floor(t/1000) * QUARTER_PI;
 			
 	for (let i = 0; i < 20; ++i) {
 		for (let j = 0; j < 21; ++j) {
