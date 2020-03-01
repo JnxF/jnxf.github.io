@@ -4,8 +4,9 @@ let textures = [];
 let xposition = [];
 let yposition = [];
 let zposition = [];
+let scales = [];
 let speed = [];
-let numWords = 30;
+let numWords = 40;
 
 let angle = 0;
 
@@ -35,6 +36,7 @@ function draw() {
     yposition.push(1.5 * random(-height/2, height/2));
     zposition.push(random(-3500, 0));
     speed.push(random(5, 20));
+    scales.push(random(3, 5));
     
     colorMode(HSB);
     let c = color(random(0, 255), 255, 255);
@@ -56,11 +58,12 @@ function draw() {
     let x = xposition[i];
     let y = yposition[i];
     let z = zposition[i];
-    
+    let sc = scales[i];
     zposition[i] += speed[i];
 
     translate(x, y, z);
     texture(textures[i]);
+    scale(sc, sc, 1);
     plane(120, 60);
     pop();
   }
@@ -75,6 +78,7 @@ function deleteOutWords() {
       xposition.splice(i, 1);
       yposition.splice(i, 1);
       zposition.splice(i, 1);
+      scales.splice(i, 1);
     }
   } 
 }
