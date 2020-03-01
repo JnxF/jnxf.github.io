@@ -49,6 +49,7 @@ hr {
     font-family: Monaco, Consolas, monospace;
 }
 .is-awesome {
+	text-align: center;
     animation: example 2500s linear infinite;
     text-shadow: .05em .05em rgba(10, 10, 10, .35);
     background-color: #3298dc;
