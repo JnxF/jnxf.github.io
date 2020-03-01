@@ -8,6 +8,11 @@ html, body {
   color: white;
   font-family: Futura, Arial;
   background: black;
+
+    -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 p {
@@ -54,6 +59,8 @@ textarea {
 button,
 input { /* 1 */
   overflow: visible;
+       -moz-user-select: text;
+       user-select: text;
 }
 
 input {
