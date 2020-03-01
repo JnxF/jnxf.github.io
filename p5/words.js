@@ -10,7 +10,7 @@ let numWords = 40;
 
 let angle = 0;
 
-let myRec = new p5.SpeechRec('en-US', parseResult);
+let myRec = new p5.SpeechRec('es-ES', parseResult);
 myRec.continuous = true;
 myRec.interimResults = true;
 
