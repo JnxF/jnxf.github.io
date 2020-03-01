@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Futura, Arial;
+  background: black;
+}
+
+p {
+margin: 0}
+
+canvas {
+  display: block;
+}
+
+nav {
+  position: absolute;
+  padding: 2em 0 0 2em
+}
+
+.description {
+  position: absolute;
+  padding-left: 2em;
+  margin-top: 10em;
+  color: pink;
+  text-shadow: 1px 1px 3px black;
+}
+
+.description2 {
+  position: absolute;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-top: 15em;
+  color: pink;
+  width: 100%;
+}
+
+/* Input */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 2em;
+  background: rgba(0,0,0, 0.8);
+  border: 2px solid
+white;
+color:
+pink;
+font-weight: bold;
+}
+
+.inactive-tab {
+  transition: filter 0.25s ease-in-out;
+  filter: blur(1px);
+}
+
+.inactive-tab:hover {
+  filter: blur(0.5px);
+}
+
+nav .title {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  margin-bottom: 0.5em
+}
+
+.blur {
+  filter: blur(2px);
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+}
+
+.blur:hover {
+  filter: blur(1px);
+  transform: translateY(-0.25ex);
+}
+
+.categories a {
+  cursor: pointer;
+  margin-right: 1em;
+  font-family: Baskerville, Georgia;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none
+}
+
+.categories a::before {
+  content: "/";
+}
+
+
+#tab-images {
+  display: none;
+  padding-top: 20em;
+  padding-left: 1em;
+}
+
+
+#p5_loading {
+  display: none
+}
