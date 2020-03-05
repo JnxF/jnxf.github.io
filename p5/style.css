@@ -33,6 +33,7 @@ nav {
   margin-top: 10em;
   color: pink;
   text-shadow: 1px 1px 3px black;
+    font-size: 1.25rem;
 }
 
 .description2 {
@@ -42,6 +43,7 @@ nav {
   margin-top: 15em;
   color: pink;
   width: 100%;
+    font-size: 1.25rem;
 }
 
 /* Input */
