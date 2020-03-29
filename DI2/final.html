@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/login.css">
+
+    <title>StealBike – Thank you!</title>
+</head>
+
+<body>
+    <div class="container">
+        <header style="border-bottom: 2px solid var(--dark-blue)">
+            <div class="columns">
+                <div class="column" style="text-align: center;">
+                    <img src="greenbicycle.svg" alt="" style="width: 4em"><br>
+                    <span id="stealer">STEALER</span>
+                </div>
+                <div class="column away" style="margin: auto 0; margin-left: 3em">
+                    <span style="color: var(--dark-blue); font-size: 1.5em;">
+                        Thanks for contributing to the community!
+                    </span>
+                </div>
+            </div>
+
+        </header>
+
+        <style>
+            ul {
+                list-style: none;
+                counter-reset: li;
+                margin-top: 2em
+            }
+
+            li {
+                font-size: 1.3rem;
+                margin-bottom: 2em;
+                position: relative;
+                padding-left: 3em;
+                padding-right: 2em;
+                line-height: 1.5;
+            }
+
+            li:before {
+                content: "✓";
+                counter-increment: li;
+                position: absolute;
+                left: -.3em;
+                top: 50%;
+                margin-top: -1em;
+                height: 2em;
+                width: 2em;
+                line-height: 2em;
+                border: 3px solid var(--light-green);
+                text-align: center;
+                font-weight: 800;
+                border-radius: 2em;
+                color: white;
+                background: var(--light-green)
+            }
+
+            .description p {
+                text-align: left;
+                margin-top: 0;
+                margin-bottom: 0.5em;
+
+                font-size: 1.1em;
+            }
+
+            .description .title {
+                font-size: 1.3em;
+                font-weight: bold;
+                color: var(--dark-blue);
+            }
+
+            .address {
+                padding: 1em;
+                color: var(--dark-blue);
+                background: #EEE;
+                border-top: 3px solid var(--dark-blue);
+                border-bottom: 3px solid var(--dark-blue);
+                font-size: 1.7rem;
+                font-weight: 800
+            }
+        </style>
+
+        <div class="columns" style=" padding: 1.5em 2.5em 0em 2.5em">
+            <div class="column" style="width: 47%;"><img style="border-radius: .25em" src="payment_bicycle.PNG" alt="">
+            </div>
+            <div class="column away description">
+                <p class="title">Yellow Schrödder</p>
+                <p>Lady bike, good shape</p>
+            </div>
+        </div>
+
+        <p>You can locate your brand new bicycle at</p>
+        <p class="address">Rued Langgaards Vej 7</p>
+
+        <p>You have contributed to&hellip;</p>
+
+        <ul>
+            <li>Freeing bicycles from irresponsible owners</li>
+            <li>Global economy, which leads to happiness in society</li>
+            <li>Helping mother earth when buying old instead of new</li>
+        </ul>
+
+        <a class="button" href="stealer_map.html" style="margin-top: 1em; padding: 1em; text-align: center">
+            Go back to the map
+        </a>
+
+    </div>
+</body>
+
+</html>

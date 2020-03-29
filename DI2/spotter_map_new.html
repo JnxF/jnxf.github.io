@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/common.css">
+
+    <!-- Loading Leaflet (css styles and javascript code)-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
+    <title>StealBike – Spotter Map</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="columns">
+                <div class="column" style="text-align: center;">
+                    <img src="greenbicycle.svg" alt="" style="width: 4em"><br>
+                    <span id="stealer">SPOTTER</span>
+                </div>
+                <div class="column away">
+                    <div class="columns icons">
+                        <a href="..." class="column icon active"><i class="fa fa-fw fa-map-marker"></i></a>
+                        <a href="spotter_ar.html" class="column icon"><i class="fa fa-fw fa-camera"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div id="mapid" style="height: 90%"></div>
+
+        <a href="spotter_ar.html" class="button floating-button">I found a bike!</a>
+
+    </div>
+
+    <script>
+
+        var greenIcon = L.icon({
+            iconUrl: 'icons/greenBicycle.png',
+            iconSize: [50, 50]
+        });
+        var darkGreenIcon = L.icon({
+            iconUrl: 'icons/darkGreenBicycle.png',
+            iconSize: [50, 50]
+        });
+        var locationIcon = L.icon({
+            iconUrl: 'icons/location.png',
+            iconSize: [50, 50]
+        });
+        var ituCoordinates = [55.65960, 12.59150];
+        var ituCoordinates2 = [55.65930, 12.59120];
+        var mymap = L.map('mapid').setView(ituCoordinates, 16);
+
+        var bicycles = [
+            {
+                "lat": 55.659971470357995,
+                "lng": 12.591919898986816,
+                "name": "Yellow Schrödder",
+                "description": "Lady bike, good shape",
+                "status": "Unlocked",
+                "price": 100,
+                "address": "we'll see"
+            },
+            { "lat": 55.661502811417904, "lng": 12.592241764068605 },
+            { "lat": 55.660704489469005, "lng": 12.587070465087892 },
+            { "lat": 55.657583620163365, "lng": 12.587413787841799 },
+            { "lat": 55.65706345108826, "lng": 12.588186264038088 },
+            { "lat": 55.65849087526494, "lng": 12.592585086822512 },
+            { "lat": 55.65997872811333, "lng": 12.595031261444094 },
+            { "lat": 55.66280912130395, "lng": 12.596340179443361 }
+        ];
+
+       
+
+        for (b of bicycles) {
+            var latlng = [b.lat, b.lng];
+            var marker = L.marker(latlng, { icon: greenIcon }).addTo(mymap);
+
+            var name = b.name || "Hi";
+            var description = b.description || "Empty description";
+            var status = b.status || "Locked";
+            var price = (b.price || 100) + " kr.";
+            var address = b.address || "Rued Langgaards Vej 7";
+            
+            /*
+            marker.bindPopup(`<b>${name}</b>
+            ${description}<br>
+            ${status}<br>
+            ${price}<br>
+            
+            <a href="..." class="popup-button">Steal bike</a>`)
+            */
+        }
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 20,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
+        }).addTo(mymap);
+
+
+        // Show marker on user's location
+        // or at ITU if not possible
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showMarkerAtUserPosition, showItu);
+        } else {
+            alert("Your browser doesn't support geolocalization")
+        }
+
+        function showMarkerAtUserPosition(position) {
+            var xx = L.marker(ituCoordinates2, { icon: darkGreenIcon }).addTo(mymap);
+
+            coords = [position.coords.latitude, position.coords.longitude];
+            L.marker(coords, { icon: locationIcon }).addTo(mymap);
+        }
+
+        function showItu() {
+            var xx = L.marker(ituCoordinates2, { icon: darkGreenIcon }).addTo(mymap);
+            L.marker(ituCoordinates, { icon: locationIcon }).addTo(mymap);
+
+        }
+    </script>
+</body>
+
+</html>
