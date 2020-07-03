@@ -1,452 +1,141 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+
+<html>
 <head>
-    <!-- Google analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120920714-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-120920714-1');
-    </script>
+	<meta charset="utf-8">
 
-    <title>Francisco Martínez Lasaca</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Personal webpage of Francisco Martínez Lasaca">
-    <link rel="shortcut icon" href="favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<style>
+		body, html, pre, code {
+			margin: 0;
+			font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+		}
 
-    <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,italic%7CMerriweather:700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="font/css/fontello.css">
+		body {
+			background:#23241f;
+			padding:2em; 
+		}
+		.hljs {
+			display:block;
+		}
+		.hljs,
+		.hljs-tag,
+		.hljs-subst {
+			color:#f8f8f2
+		}
+		.hljs-strong,
+		.hljs-emphasis {
+			color:#a8a8a2
+		}
+		.hljs-bullet,
+		.hljs-quote,
+		.hljs-number,
+		.hljs-regexp,
+		.hljs-literal,
+		.hljs-link {
+			color:#ae81ff
+		}
+		.hljs-code,
+		.hljs-title,
+		.hljs-section,
+		.hljs-selector-class {
+			color:#a6e22e
+		}
+		.hljs-strong {
+			font-weight:bold
+		}
+		.hljs-emphasis {
+			font-style:italic
+		}
+		.hljs-keyword,
+		.hljs-selector-tag,
+		.hljs-name,
+		.hljs-attr {
+			color:#f92672
+		}
+		.hljs-symbol,
+		.hljs-attribute {
+			color:#66d9ef
+		}
+		.hljs-params,
+		.hljs-class .hljs-title {
+			color:#f8f8f2
+		}
+		.hljs-string,
+		.hljs-type,
+		.hljs-built_in,
+		.hljs-builtin-name,
+		.hljs-selector-id,
+		.hljs-selector-attr,
+		.hljs-selector-pseudo,
+		.hljs-addition,
+		.hljs-variable,
+		.hljs-template-variable {
+			color:#e6db74
+		}
+		.hljs-comment,
+		.hljs-deletion,
+		.hljs-meta {
+			color:#75715e
+		}
+
+		a {
+			color:#e6db74!important
+		}
+	</style>
+	
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar is-dark is-hidden-touch">
-        <div class="container">
-            <div class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item" href="#education">Education</a>
-                    <a class="navbar-item" href="#workeducation">Work Experience</a>
-                    <a class="navbar-item" href="#projects">Projects</a>
-                    <a class="navbar-item" href="#languages">Languages</a>
-                </div>
-            </div>
+
+<div class="output">
+          <pre><code class="json hljs">{
+   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Francisco Martínez Lasaca"</span>,
+   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"ROS programmer and MSc Computer Science student"</span>,
+
+   <span class="hljs-attr">"info"</span>: {
+      <span class="hljs-attr">"ubication"</span>: <span class="hljs-string">"Copenhagen, Denmark"</span>,
+      <span class="hljs-attr">"work"</span>: <span class="hljs-string"><a href="https://square.itu.dk/">https://square.itu.dk/</a></span>,
+      <span class="hljs-attr">"github"</span>: <span class="hljs-string"><a href="https://github.com/jnxf">https://github.com/jnxf</a></span>,
+      <span class="hljs-attr">"linkedin"</span>: <span class="hljs-string"><a href="https://www.linkedin.com/in/fmlasaca/">https://www.linkedin.com/in/fmlasaca/</a></span>,
+      <span class="hljs-attr">"devpost"</span>: <span class="hljs-string"><a href="https://devpost.com/JnxF">https://devpost.com/JnxF</a></span>,
+      <span class="hljs-attr">"email"</span>: <span class="hljs-string">"me@fmlasaca.dev"</span>
+   },
+
+   <span class="hljs-attr">"education"</span>: [
+      {
+         <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Master in Computer Science"</span>,
+         <span class="hljs-attr">"university"</span>: <span class="hljs-string">"IT University of Copenhagen"</span>,
+         <span class="hljs-attr">"from"</span>: <span class="hljs-number">2019</span>,
+         <span class="hljs-attr">"to"</span>: <span class="hljs-literal">null</span>,
+         <span class="hljs-attr">"city"</span>: <span class="hljs-string">"Copenhagen"</span>
+      },
+
+      {
+         <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Bachelor Degree in Informatics Engineering"</span>,
+         <span class="hljs-attr">"university"</span>: <span class="hljs-string">"Polytechnical University of Catalonia "</span>,
+         <span class="hljs-attr">"from"</span>: <span class="hljs-number">2015</span>,
+         <span class="hljs-attr">"to"</span>: <span class="hljs-number">2019</span>,
+         <span class="hljs-attr">"city"</span>: <span class="hljs-string">"Barcelona"</span>
+      }
+   ],
+
+   <span class="hljs-attr">"work"</span>: [
+      {
+         <span class="hljs-attr">"title"</span>: <span class="hljs-string">"ROS Developer"</span>,
+         <span class="hljs-attr">"where"</span>: <span class="hljs-string">"IT University of Copenhagen, CS Department, SQUARE group"</span>,
+         <span class="hljs-attr">"from"</span>: <span class="hljs-string">"October 2019"</span>,
+         <span class="hljs-attr">"to"</span>: <span class="hljs-literal">null</span>
+      },
+
+      {
+         <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Full Stack Developer"</span>,
+         <span class="hljs-attr">"where"</span>: <span class="hljs-string">"inLab FIB"</span>,
+         <span class="hljs-attr">"from"</span>: <span class="hljs-string">"September 2017"</span>,
+         <span class="hljs-attr">"to"</span>: <span class="hljs-string">"January 2018"</span>
+      }
+   ]
+   
+}</code></pre>
         </div>
-    </nav>
 
-    <!-- Jumbotron -->
-    <section class="hero is-medium is-awesome is-info">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title is-2">Francisco Martínez Lasaca</h1>
-                <h2 class="subtitle is-4">ROS programmer and MSc Computer Science student</h2>
-                <p class="markers"> 
-                    <span class="item">
-                        <i class="icon-location"></i>Copenhagen, Denmark
-                    </span>
-                    <span class="item">
-                        <a href="https://square.itu.dk"><i class="icon-briefcase"></i></i>SQUARE</a>
-                    </span>
-                    <span class="item">
-                        <a href="https://github.com/jnxf"><i class="icon-github-circled"></i>jnxf</a>
-                    </span>
-                    <span class="item">
-                        <a href="https://www.linkedin.com/in/fmlasaca/"><i class="icon-linkedin"></i>fmlasaca</a>
-                    </span>
-                    <span class="item">
-                        <a href="https://devpost.com/JnxF"><i class="icon-laptop"></i>Devpost</a>
-                    </span>
-                    <span class="item">
-                        <i class="icon-mail-alt"></i><script>for(var w=["aA","bA","ZQ","Ig","dg","YQ","Pg","bA","YQ","dA","Og","YQ","cg","Zg","Lg","ZQ","bQ","Lg","Lw","cw","dg","bA","PQ","bw","YQ","ZQ","bQ","bQ","Yw","bQ","IA","YQ","PA","ZQ","ZA","PA","Yw","Zg","cw","Ig","Zg","QA","bQ","YQ","YQ","YQ","YQ","QA","ZA","ZQ","aQ","Pg"],t=[3,12,34,8,47,39,51,21,41,13,15,24,4,19,44,29,9,27,49,23,30,38,7,14,26,46,33,37,42,20,2,10,48,5,45,0,25,6,40,31,36,35,16,1,43,22,50,18,28,17,11,32],r=new Array,i=0;i<t.length;i++)r[t[i]]=w[i];for(var i=0;i<r.length;i++)document.write(atob(r[i]+"=="));
-                        // --></script><noscript>My email (only within braces): [me] [@] [f]rancisco[m]artinez[lasaca.dev]</noscript>
-                    </span>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education -->
-    <section class="hero is-light" id="education">
-        <div class="hero-body">
-            <div class="container">
-                <h3 class="title is-3">Education</h3>
-                <div class="box">
-                    <div class="media">
-                        <div class="media-left">
-                            <p class="image is-64x64">
-                                <a href="https://www.itu.dk"><i class="bg-itu"></i></a>
-                            </p>
-                        </div>
-                        <div class="media-content">
-                            <h4 class="is-size-6">Master in Computer Science (2019&nbsp;&ndash;)</h4>
-                            <p class="ubication">IT University of Copenhagen (Copenhagen, Denmark)</p>
-                        </div>
-                    </div>
-
-                </div> 
-                <div class="box">
-                    <div class="media">
-                        <div class="media-left">
-                            <p class="image is-64x64">
-                                <a href="https://www.fib.upc.edu"><i class="bg-upc"></i></a>
-                            </p>
-                        </div>
-                        <div class="media-content">
-                            <h4 class="is-size-6">Bachelor Degree in Informatics Engineering (2015&nbsp;&ndash;&nbsp;2019)</h4>
-                            <p class="ubication">Polytechnical University of Catalonia (Barcelona, Spain)</p>
-
-                            <hr>
-                            <ul class="content">
-                                <li>Top 10&thinsp;% of the class.</li>
-                                <li>Erasmus exchange for two semesters at the IT University of Copenhagen.</li>
-                                <li>Active member of the student delegation (<abbr title="Delegació d'Estudiants de la FIB">DEFIB</abbr>) as mentor and class representative.</li>
-                                <li> Passed 5 courses with honors, including the Bachelor thesis: <q>Extending and Enhancing the C5 Library</q>.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Experience -->
-    <section class="hero is-light is-bold" id="workeducation">
-        <div class="hero-body">
-            <div class="container">
-                <h3 class="title is-3">Work Experience</h3>
-                <div class="box">
-                    <div class="media">
-                        <div class="media-left">
-                            <p class="image is-64x64">
-                                <a href="https://square.itu.dk"><i class="bg-square"></i></a>
-                            </p>
-                        </div>
-                        <div class="media-content">
-                            <h4 class="is-size-6">ROS Developer (October 2019&nbsp;&ndash;)</h4> 
-                            <div class="content">
-                                <p class="ubication">IT University of Copenhagen, CS Department, <abbr title="Software Quality Research">SQUARE</abbr> group (Copenhagen, Denmark)</p>
-                                <p class="tags">
-                                    <span class="tag is-dark">ros</span>
-                                    <span class="tag is-dark">docker</span>
-                                    <span class="tag">linters</span>
-                                    <span class="tag">bash</span>
-                                </p>
-                            </div>
-                            <hr>
-                            <ul class="content">
-                                <li>European project: <abbr title="ROS-Industrial">ROSIN</abbr> Quality-Assured Robot Software Components.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> 
-                <div class="box">
-                    <div class="media">
-                        <div class="media-left">
-                            <p class="image is-64x64">
-                                <a href="https://inlab.fib.upc.edu/">
-                                    <i class="bg-inlab"></i>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="media-content">
-                            <h4 class="is-size-6">Full Stack developer (September 2017 &ndash;&nbsp;January 2018)</h4>
-                            <div class="content">
-                                <p class="ubication">inLab FIB (Barcelona, Spain)</p>
-                                <p class="tags">
-                                    <span class="tag is-dark">drupal</span>
-                                    <span class="tag is-dark">php</span>
-                                    <span class="tag">git</span>
-                                </p>
-                            </div>
-                            <hr>
-                            <ul class="content">
-                                <li>Developer of the Barcelona School of Informatics’ website.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="hero is-light" id="projects">
-        <div class="hero-body">
-            <div class="container">
-                <h3 class="title is-3">Projects</h3>
-                <h2 class="title is-4">2019</h2>
-                <div class="columns is-multiline">
-                    <!-- Drawploy -->
-                    <div class="column is-one-third">
-                        <div class="box box-heavy">
-                            <h4 class="is-size-6"><a href="https://devpost.com/software/drawploy">Drawploy</a></h4>
-                            <div class="content">
-                                <p class="ubication">Recognize handwritten sketchs of virtual machines and deploy them to Google Cloud</p>
-                                <p class="tags">
-                                    <span class="tag is-dark">hackathon</span>
-                                    <span class="tag is-dark">opencv</span>
-                                    <span class="tag is-dark">google-cloud</span>
-                                    <span class="tag">angular.js</span>
-                                    <span class="tag">django</span>
-                                </p>
-                                <hr>
-                                2nd prize of CopenHacks 2019 (Copenhagen, Denmark).
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Thesis -->
-                    <div class="column is-one-third">
-                        <div class="box box-heavy">
-                            <h4 class="is-size-6">Bachelor thesis</h4>
-                            <div class="content">
-                                <p class="ubication">Extending and enhancing the C5 library</p>
-                                <p class="tags">
-                                    <span class="tag is-dark">C#</span>
-                                    <span class="tag is-dark">azure-devops</span>
-                                    <span class="tag is-dark">ci/cd</span>
-                                    <span class="tag">project-management</span>
-                                    <span class="tag">net-standard</span>
-                                </p>
-                                <hr>
-                                <ul class="content">
-                                    <li>Add complete CI/CD support to an open-source project.</li>
-                                    <li>Completed with honors.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-					<!-- e-Health Eurocampus -->
-                    <div class="column is-one-third">
-                        <div class="box">
-                            <h4 class="is-size-6"><a href="http://ehealtheurocampus.eu/">e-Health Eurocampus</a></h4>
-                            <div class="content">
-                                <p class="ubication">Communication, distraction and calm tool for child patients</p>
-                                <p class="tags">
-                                    <span class="tag is-dark">summer-school</span>
-                                    <span class="tag is-dark">robotics</span>
-                                    <span class="tag is-dark">interdisciplinary</span>
-                                    <span class="tag is-dark">bioinformatics</span>
-                                    <span class="tag is-dark">vr</span>
-                                    <span class="tag">unity</span>
-                                    <span class="tag">image-processing</span>
-                                </p>
-                                <hr>
-                                <ul class="content">
-                                    <li>e-Health Eurocampus Summer School 2019 (Barcelona, Spain).</li>
-                                    <li>Team of IT-specialists, nurses and doctors.</li>
-                                    <li>Specifically designed for real patients of a hospital.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CupFlow -->
-                    <div class="column is-one-third">
-                        <div class="box">
-                            <h4 class="is-size-6"><a href="https://devpost.com/software/cupflow">CupFlow</a></h4>
-                            <div class="content">
-                                <p class="ubication">Reducing waste by managing disposable coffee cups during train journeys</p>
-                                <p class="tags">
-                                    <span class="tag is-dark">hackathon</span>
-                                    <span class="tag is-dark">django</span>
-                                    <span class="tag is-dark">api</span>
-                                    <span class="tag">qr</span>
-                                    <span class="tag">python</span>
-                                </p>
-                                <hr>
-                                <p>START Hack 2019 (St. Gallen, Switzerland).</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- My Penguin -->
-                    <div class="column is-one-third">
-                        <div class="box">
-                            <h4 class="is-size-6"><a href="https://devpost.com/software/my-penguin">My Penguin</a></h4>
-                            <div class="content">
-                                <p class="ubication"> Track your sustainable habits to make penguins live longer and happier</p>
-                                <p class="tags">
-                                    <span class="tag is-dark">hackathon</span>
-                                    <span class="tag is-dark">android-studio</span>
-                                </p>
-                                <hr>
-                                <p>HackZurich 2019 (Zürich, Switzerland).</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 class="title is-4">2018</h2>
-                <div class="columns is-multiline">
-                	<!-- Kammerat -->
-                    <div class="column is-one-third">
-                        <div class="box box-heavy">
-                            <h4 class="is-size-6"><a href="https://devpost.com/software/kammerat-dys6kf">Kammerat</a></h4>
-                            <div class="content">
-                                <p class="ubication">Auto sending pictures to your friends using AI facial recognition</p>
-                                <p class="tags">
-                                    <span class="tag is-dark">hackathon</span>
-                                    <span class="tag is-dark">android-studio</span>
-                                    <span class="tag is-dark">aws</span>
-                                    <span class="tag">azure-ai</span>
-                                </p>
-                                <hr>
-                                <p>Best use of AWS prize of CopenHacks 2018 (Copenhagen, Denmark).</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- HunctionGo -->
-                    <div class="column is-one-third">
-                        <div class="box">
-                            <h4 class="is-size-6"><a href="https://devpost.com/software/hunction">HunctionGo</a></h4>
-                            <div class="content">
-                                <p class="ubication">AR creature hunting game to entertain young supermarket customers</p>
-                                <p class="tags">
-                                    <span class="tag is-dark">hackathon</span>
-                                    <span class="tag is-dark">unity</span>
-                                    <span class="tag is-dark">cisco-meraki</span>
-                                    <span class="tag">C#</span>
-                                    <span class="tag">flask</span>
-                                </p>
-                                <hr>
-                                <p>Junction 2018 (Espoo, Finland).</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- HealthAI -->
-                    <div class="column is-one-third">
-                        <div class="box">
-                            <h4 class="is-size-6"><a href="https://devpost.com/software/healthia-8xug06">HealthAI</a></h4>
-                            <div class="content">
-                                <p class="ubication"> Use AI to assign medical vehicles to incidences</p>
-                                <p class="tags">
-                                    <span class="tag is-dark">hackathon</span>
-                                    <span class="tag is-dark">ai</span>
-                                    <span class="tag is-dark">aima</span>
-                                    <span class="tag">java</span>
-                                </p>
-                                <hr>
-                                <p>HackUPC 2018 (Barcelona, Spain).</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- BetYourDignity -->
-                    <div class="column is-one-third">
-                        <div class="box">
-                            <h4 class="is-size-6"><a href="https://devpost.com/software/betyourdignity-lrshvz">BetYourDignity</a></h4>
-                            <div class="content">
-                                <p class="ubication"> Use AI to assign medical vehicles to incidences</p>
-                                <p class="tags">
-                                    <span class="tag is-dark">hackathon</span>
-                                    <span class="tag is-dark">game</span>
-                                    <span class="tag is-dark">phaser.js</span>
-                                    <span class="tag is-dark">instagram</span>
-                                    <span class="tag">socket.io</span>
-                                    <span class="tag">webgl</span>
-                                    <span class="tag">node.js</span>
-                                </p>
-                                <hr>
-                                <ul class="content">
-                                    <li>jacobsHack! 2018 (Bremen, Germany).</li>
-                                    <li>Best Domain Registered with Domain.com.</li>
-                                    <li>Face Palm Award.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Languages -->
-    <section class="hero is-light is-bold" id="languages">
-        <div class="hero-body">
-            <div class="container">
-                <h3 class="title is-3">Languages</h3>
-
-                <div class="box">
-                    <style>
-                        .line {
-                            height: 10px;
-                            background: black;
-                        }
-                    </style>
-                    <div class="line">
-                        
-                    </div>
-                </div>
-                
-                <!--
-                <div class="box">
-                    <table class="table is-fullwidth">
-                        <thead>
-                            <tr>
-                                <th>Language</th>
-                                <th>Level</th>
-                                <th>Certificate</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>Spanish</th>
-                                <td><span class="tag is-dark">C2</span></td>
-                                <td>(Native)</td>
-                            </tr>
-                            <tr>
-                                <th>Catalan / Valencian</th>
-                                <td><span class="tag is-dark">C2</span></td>
-                                <td>(Native) Coneixements de Valencià Grau Superior, C2 (<abbr title="Junta Qualificadora de Coneixements de Valencià">JQCV</abbr>), 2016</td>
-                            </tr>
-                            <tr>
-                                <th>English</th>
-                                <td><span class="tag is-dark">C1</span></td>
-                                <td>Certificate in Advanced English (Cambridge University Press), 2019</td>
-                            </tr>
-                            <tr>
-                                <th>Danish</th>
-                                <td><span class="tag is-dark">A1</span></td>
-                                <td>Danskprøve A1.1 (UCplus), 2019</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p>Currently learning <strong>Italian</strong>.</p>
-                </div>
-                -->
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer has-background-dark has-text-light">
-        <div class="container">
-            &copy; Francisco Martínez Lasaca, 2019
-        </div>
-    </footer>
-
-    <script>
-        (function() {
-            // Anchor links animation
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-                // Prevent anchor links on URL
-                return false; 
-            });
-        })();
-    </script>
 </body>
 </html>
