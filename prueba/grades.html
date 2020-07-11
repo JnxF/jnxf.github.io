@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logout">
+            <div class="container">
+                Welcome, Francisco Martínez Lasaca! &nbsp; <a href="logout">Logout</a>
+            </div>
+        </div>
+        <div class="container" style="display: flex; flex-direction: row; align-items: center; flex-grow: 1;">
+            <h1 class="title">
+                My Study Activities
+            </h1>
+        </div>
+
+        <div class="cover">
+            <div class="container">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Front page</a></li>
+                        <li class="active"><a href="grades.html">Grades</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="index.html">Transcripts</a></li>
+                        <li><a href="index.html">Address</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Grades</h1>
+
+        <ul class="studies tabs" data-tabs-initial=2>
+            <li>Guest student</li>
+            <li>MSc Computer Science</li>
+        </ul>
+
+        <div>
+            <div id="guest-student-tab">
+                <p>You have completed <code>52.5</code> credits, with an average grade of <code>10.43</code>.
+                </p>
+                <table class="grades">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>ECTS</th>
+                            <th>Course Title</th>
+                            <th>Grade</th>
+                            <th>ECTS-Gr.</th>
+                            <th>Graded</th>
+                            <th>Released</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BSIIAML1KE</td>
+                            <td>7.5</td>
+                            <td>Introduction to Image Analysis and Machine Learning</td>
+                            <td>7</td>
+                            <td>C</td>
+                            <td>06.06.2019</td>
+                            <td>13.06.2019</td>
+                        </tr>
+                        <tr>
+                            <td>BIP15001PE</td>
+                            <td>15.0</td>
+                            <td>Projekt</td>
+                            <td>12</td>
+                            <td>A</td>
+                            <td>31.05.2019</td>
+                            <td>04.06.2019</td>
+                        </tr>
+                        <tr>
+                            <td>1408003E</td>
+                            <td>15.0</td>
+                            <td>Analyse, design og softwarearkitektur</td>
+                            <td>10</td>
+                            <td>B</td>
+                            <td>15.03.2019</td>
+                            <td>19.03.2019</td>
+                        </tr>
+                        <tr>
+                            <td>BSMODIS1KE</td>
+                            <td>7.5</td>
+                            <td>Mobile og distribuerede systemer</td>
+                            <td>12</td>
+                            <td>A</td>
+                            <td>25.01.2019</td>
+                            <td>05.02.2019</td>
+                        </tr>
+                        <tr>
+                            <td>1914006E</td>
+                            <td>7.5</td>
+                            <td>Digital Experience and Aesthetics</td>
+                            <td>10</td>
+                            <td>B</td>
+                            <td>18.01.2019</td>
+                            <td>22.01.2019</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="msc-student-tab">
+                <p>You have completed <code>52.5</code> credits out of 120, with an average grade of <code>11.00</code>.
+                </p>
+
+                <table class="grades">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>ECTS</th>
+                            <th>Course Title</th>
+                            <th>Grade</th>
+                            <th>ECTS-Gr.</th>
+                            <th>Graded</th>
+                            <th>Released</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>KADEINT1KE</td>
+                            <td>7.5</td>
+                            <td>Designing Interactions</td>
+                            <td>10</td>
+                            <td>B</td>
+                            <td>19.06.2020</td>
+                            <td>23.06.2020</td>
+                        </tr>
+                        <tr>
+                            <td>KSMOSYL1KE</td>
+                            <td>7.5</td>
+                            <td>Modelling Systems and Languages</td>
+                            <td>12</td>
+                            <td>A</td>
+                            <td>16.06.2020</td>
+                            <td>23.06.2020</td>
+                        </tr>
+                        <tr>
+                            <td>KSINSMT1KE</td>
+                            <td>7.5</td>
+                            <td>Industrial Scrum Master Training</td>
+                            <td>10</td>
+                            <td>B</td>
+                            <td>20.05.2020</td>
+                            <td>27.05.2020</td>
+                        </tr>
+                        <tr>
+                            <td>KIREPRO1PE</td>
+                            <td>7.5</td>
+                            <td>Research Project</td>
+                            <td>U</td>
+                            <td>&nbsp;</td>
+                            <td>15.05.2020</td>
+                            <td>26.05.2020</td>
+                        </tr>
+                        <tr>
+                            <td>KSALDES1KE</td>
+                            <td>7.5</td>
+                            <td>Algorithm Design</td>
+                            <td>12</td>
+                            <td>A</td>
+                            <td>17.02.2020</td>
+                            <td>18.02.2020</td>
+                        </tr>
+                        <tr>
+                            <td>KSADPRO2KE</td>
+                            <td>7.5</td>
+                            <td>Advanced Programming</td>
+                            <td>12</td>
+                            <td>A</td>
+                            <td>24.01.2020</td>
+                            <td>24.01.2020</td>
+                        </tr>
+                        <tr>
+                            <td>KGGAPRO1KE</td>
+                            <td>7.5</td>
+                            <td>Game Programming</td>
+                            <td>10</td>
+                            <td>B</td>
+                            <td>15.01.2020</td>
+                            <td>16.01.2020</td>
+                        </tr>
+                        <tr>
+                            <td>KSSECU11KE</td>
+                            <td>7.5</td>
+                            <td>Security 1</td>
+                            <td>7</td>
+                            <td>C</td>
+                            <td>15.01.2020</td>
+                            <td>21.01.2020</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="icon-list">
+                    <div>
+                        <a href="transcript.php">
+                            <div class="icon">
+
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-arrow-down"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4 1h5v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6h1v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z" />
+                                    <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 0 1 9 4.5z" />
+                                    <path fill-rule="evenodd"
+                                        d="M5.646 9.146a.5.5 0 0 1 .708 0L8 10.793l1.646-1.647a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 0-.708z" />
+                                    <path fill-rule="evenodd"
+                                        d="M8 6a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0v-4A.5.5 0 0 1 8 6z" />
+                                </svg>
+                            </div>
+                            <div class="description">
+                                Generate transcript of records
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="transcript.php">
+                            <div class="icon">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-exclamation-triangle"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M7.938 2.016a.146.146 0 0 0-.054.057L1.027 13.74a.176.176 0 0 0-.002.183c.016.03.037.05.054.06.015.01.034.017.066.017h13.713a.12.12 0 0 0 .066-.017.163.163 0 0 0 .055-.06.176.176 0 0 0-.003-.183L8.12 2.073a.146.146 0 0 0-.054-.057A.13.13 0 0 0 8.002 2a.13.13 0 0 0-.064.016zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z" />
+                                    <path
+                                        d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z" />
+                                </svg>
+                            </div>
+                            <div class="description">
+                                Inform about a problem
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; IT University of Copenhagen, 2020
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
