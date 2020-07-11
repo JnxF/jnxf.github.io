@@ -1,0 +1,50 @@
+.tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: 0
+}
+
+.tabs > li {
+    padding: 0.5em 1em;
+    background-clip: padding-box;
+    font-weight: 600;
+    cursor: pointer
+}
+
+.tabs > li.active {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.tabs + div {
+    border: 1px solid var(--border-color);
+    border-top: none;
+    padding: 2rem;
+    border-radius: 0 0 2px 2px;
+}
+
+.tabs + div > div > *:first-child {
+    margin-top: 0 !important;
+}
+.tabs + div > div > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 600px) {
+    table.grades tr td:first-child {
+        display: none
+    }
+
+    table.grades tr td:nth-child(2) {
+        display: none
+    }
+
+    table.grades tr td:nth-last-child(1), tr td:nth-last-child(2), tr td:nth-last-child(3) {
+        display: none
+    }
+    table.grades tbody td:nth-child(4) {
+        flex: 1;
+        text-align: right;
+    }    
+}

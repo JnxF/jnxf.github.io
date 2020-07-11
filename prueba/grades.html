@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grades.css">
 </head>
 
 <body>
@@ -20,10 +21,10 @@
                 Welcome, Francisco Martínez Lasaca! &nbsp; <a href="logout">Logout</a>
             </div>
         </div>
-        <div class="container" style="display: flex; flex-direction: row; align-items: center; flex-grow: 1;">
-            <h1 class="title">
+        <div class="container title-wrapper">
+            <div class="title">
                 My Study Activities
-            </h1>
+            </div>
         </div>
 
         <div class="cover">
@@ -45,16 +46,16 @@
     <main class="container">
         <h1>Grades</h1>
 
-        <ul class="studies tabs" data-tabs-initial=2>
-            <li>Guest student</li>
+        <ul class="tabs" data-tabs-initial=2>
             <li>MSc Computer Science</li>
+            <li>Guest student</li>
         </ul>
 
         <div>
-            <div id="guest-student-tab">
+            <div>
                 <p>You have completed <code>52.5</code> credits, with an average grade of <code>10.43</code>.
                 </p>
-                <table class="grades">
+                <table class="grades responsive striped">
                     <thead>
                         <tr>
                             <th>Code</th>
@@ -116,11 +117,11 @@
                 </table>
             </div>
 
-            <div id="msc-student-tab">
+            <div>
                 <p>You have completed <code>52.5</code> credits out of 120, with an average grade of <code>11.00</code>.
                 </p>
 
-                <table class="grades">
+                <table class="grades responsive striped">
                     <thead>
                         <tr>
                             <th>Code</th>
