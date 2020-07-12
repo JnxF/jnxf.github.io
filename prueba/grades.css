@@ -3,14 +3,18 @@
     list-style: none;
     padding: 0;
     border-bottom: 1px solid var(--primary-color);
-    margin-bottom: 0
+    margin-bottom: 0;
+    align-items: self-end;
 }
 
 .tabs > li {
     padding: 0.5em 1em;
     background-clip: padding-box;
     font-weight: 600;
-    cursor: pointer
+    cursor: pointer;
+    line-height: 1;
+    border-bottom: 3px solid transparent;
+    transition: all .25s ease-in-out;
 }
 
 .tabs > li.active {

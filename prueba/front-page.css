@@ -1,11 +1,11 @@
 
 .row-front {
     display: flex;
-    column-gap: 2em;
 }
 
 .row-front > article {
     flex: 3;
+    margin-right: 2rem
 }
 
 .row-front > aside {
@@ -14,11 +14,18 @@
     padding: 1em;
 }
 
+.grade {
+    margin: 1rem 0
+}
+
+.grade:not(:last-child) {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem
+}
+
 .course-grade {
     display: flex;
-    column-gap: 1rem;
     align-items: center;
-    margin-top: 1rem;
 }
 
 .course-grade > .bigNumber {
@@ -28,6 +35,7 @@
     color: #555;
     min-width: 1.5em;
     text-align: right;
+    margin-right: 1rem;
 }
 
 .course-grade > .course {
@@ -38,7 +46,7 @@
 .chart {
     fill: var(--soft-primary-color);
     width: 100%;
-    margin: 1rem 0;
+    margin-top: 1rem;
 }
 
 .chart .highlighted {
@@ -49,8 +57,6 @@ aside > h3 {
     margin-top: 0;
     margin-bottom: 1em;
 }
-
-
 
 @media (max-width: 992px) {
     .row-front {
@@ -63,11 +69,17 @@ aside > h3 {
 
     .charts {
         display: flex;
-        column-gap: 2em;
+    }
+
+    .charts .grade:not(:last-child) {
+        margin-right: 2rem;
     }
 
     .charts .grade {
-        flex: 1
+        flex: 1;
+        border-bottom: none;
+        padding-bottom: 0;
+        margin: 0;
     }
 }
 
@@ -77,6 +89,11 @@ aside > h3 {
     }
 
     .grade {
-        margin-bottom: 1em
+        margin: 1rem 0 !important;
+    }
+    
+    .grade:not(:last-child) {
+        border-bottom: 1px solid gray;
+        padding-bottom: 1rem
     }
 }
