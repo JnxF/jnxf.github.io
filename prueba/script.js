@@ -22,7 +22,6 @@ for (const tab of tabs) {
             var parent = tabElement.parentElement;
             var index = Array.prototype.indexOf.call(parent.children, tabElement);
 
-            console.log(index);
             if (tabElement.classList.contains("active")) {
                 e.preventDefault();
             }

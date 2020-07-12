@@ -1,7 +1,12 @@
 :root {
     --text-color: #222;
     --clear-color: #efefef;
+
     --primary-color: #0058a0;
+    --primary-success: #00a000;
+    --primary-warning: #c99900;
+    --primary-danger: #a00010;
+
     --border-color: #666;
     --soft-primary-color: #859bad;
 }
@@ -59,7 +64,7 @@ footer {
 /* Header */
 header {
     background-image: url(itu_background.jpg);
-    background-position-y: 13%;
+    background-position-y: 89%;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -191,9 +196,13 @@ table.striped tr:nth-child(2n+1) td {
 
 
 /* Other elements */
-code {
-    font-weight: bold;  
+code, kbd, pre, samp {
+    font-size: 1em;
     font-family: "Space Mono", 'Courier New', Courier, monospace;
+}
+
+:not(pre) > code {
+    font-weight: bold;  
     padding: 0 .25rem;
     background: var(--clear-color);
     border-radius: 2px;
@@ -261,6 +270,81 @@ code {
 .tabs + div > div > *:last-child {
     margin-bottom: 0 !important;
 }
+
+/* Alert */
+.alert {
+    border-left: 5px solid var(--primary-color);
+    background-color: #efefef;
+    padding: 1.25rem;
+    margin: 1rem 0;
+}
+
+.alert.danger {
+    border-left-color: var(--primary-danger);
+}
+
+.alert.warning {
+    border-left-color: var(--primary-warning);
+}
+
+.alert.success {
+    border-left-color: var(--primary-success);
+}
+
+/* Summary */
+details {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    border: 1px solid var(--border-color);
+    background-color: #f2f2f2;
+    color: inherit;
+    transition: background-color 0.15s;
+}
+
+details > :last-child {
+    margin-bottom: 1rem;
+}
+
+details[open] {
+    background-color: #fff;
+}
+
+details[open]::before {
+    opacity: 0.6;
+}
+
+summary {
+    padding: 1rem 2em 1rem 0;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+}
+summary > * {
+    margin: 0
+}
+summary::before, summary::after {
+    width: 1em;
+    height: .2em;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: '';
+    background-color: var(--primary-color);
+    text-align: right;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease-in-out;
+}
+summary::after {
+    transform: translateY(-50%) rotate(90deg);
+}
+[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+
 
 /* Media queries */
 

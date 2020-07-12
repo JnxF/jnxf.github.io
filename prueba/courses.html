@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logout">
+            <div class="container">
+                Hi, Francisco Martínez Lasaca! &nbsp; <a href="logout">Logout</a>
+            </div>
+        </div>
+        <div class="container title-wrapper">
+            <div class="title">
+                My Study Activities
+            </div>
+        </div>
+
+        <div class="cover">
+            <div class="container">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Front page</a></li>
+                        <li><a href="grades.html">Grades</a></li>
+                        <li class="active"><a href="courses.html">Courses</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="index.html">Transcripts</a></li>
+                        <li><a href="index.html">Address</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Courses</h1>
+
+
+        <style>
+            .courses-registration .bi {
+                vertical-align: bottom;
+                font-size: 1.2em;
+                margin-right: 0.4ex
+            }
+
+            .courses-registration .bi.bi-x {
+                color: var(--primary-danger)
+            }
+
+            .courses-registration .bi.bi-check {
+                color: var(--primary-success)
+            }
+
+            .courses-registration td:first-child {
+                font-family: "Space Mono", 'Courier New', Courier, monospace;
+            }
+
+            .courses-registration td:nth-child(4) {
+                white-space: nowrap;
+            }
+        </style>
+
+        <details open>
+            <summary>
+                <h2>Spring Semester 2020</h2>
+            </summary>
+
+            <table class="striped courses-registration">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>ECTS</th>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Check Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>KADADES1KU</td>
+                        <td>7,5</td>
+                        <td>Data Design</td>
+                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+                            </svg>Cancelled</td>
+                        <td>Denied</td>
+                    </tr>
+                    <tr>
+                        <td>KADEINT1KU</td>
+                        <td>7,5</td>
+                        <td>Designing Interactions</td>
+                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                            </svg>Registered</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>KSDSESM1KU</td>
+                        <td>7,5</td>
+                        <td>DevOps, software Evolution and Software Maintenance, MSc</td>
+                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+                            </svg>Cancelled</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>KSINSMT1KU</td>
+                        <td>7,5</td>
+                        <td>Industrial Scrum Master Training</td>
+                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                            </svg>Registered</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>KSLIALP1KU</td>
+                        <td>7,5</td>
+                        <td>Linear Algebra and Probability</td>
+                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+                            </svg>Cancelled</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>KSMOSYL1KU</td>
+                        <td>7,5</td>
+                        <td>Modelling Systems and Languages</td>
+                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                            </svg>Registered</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>KSNLPDL2KU</td>
+                        <td>7,5</td>
+                        <td>Natural Language Processing and Deep Learning, MSc (Summer University)</td>
+                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                            </svg>Registered</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>KIREPRO1PE</td>
+                        <td>7,5</td>
+                        <td>Research Project</td>
+                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                            </svg>Registered</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>KIREPRO1PE</td>
+                        <td>7,5</td>
+                        <td>Research Project</td>
+                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                            </svg>Registered</td>
+                        <td>Approved</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
+
+
+        <details>
+            <summary>
+                <h2>Autumn Semester 2019</h2>
+            </summary>
+
+
+
+            <table class="striped courses-registration">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>ECTS</th>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Seat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>KGGAPRO1KU</td>
+                        <td>7,5</td>
+                        <td>Game Programming</td>
+                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                            </svg>Registered</td>
+                        <td>Assigned</td>
+                    </tr>
+                    <tr>
+                        <td>KSADPRO2KU</td>
+                        <td>7,5</td>
+                        <td>Advanced Programming, MSc CS</td>
+                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                            </svg>Registered</td>
+                        <td>Assigned</td>
+                    </tr>
+                    <tr>
+                        <td>KSALDES1KU</td>
+                        <td>7,5</td>
+                        <td>Algorithm Design, MSc CS</td>
+                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                            </svg>Registered</td>
+                        <td>Assigned</td>
+                    </tr>
+                    <tr>
+                        <td>KSPRCPP2KU</td>
+                        <td>7,5</td>
+                        <td>Practical Concurrent and Parallel Programming, MSc CS</td>
+                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />
+                            </svg>Cancelled</td>
+                        <td>Assigned</td>
+                    </tr>
+                    <tr>
+                        <td>KSSECU11KU</td>
+                        <td>7,5</td>
+                        <td>Security 1</td>
+                        <td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z" />
+                            </svg>Registered</td>
+                        <td>Assigned</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; IT University of Copenhagen, 2020
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
