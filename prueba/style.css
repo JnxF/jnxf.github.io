@@ -318,11 +318,12 @@ details[open]::before {
 }
 
 summary {
-    padding: 1rem 2em 1rem 0;
+    padding: 1rem 3rem 1rem 1rem;
     display: block;
     position: relative;
     font-weight: bold;
     cursor: pointer;
+    margin: 0 -1rem;
 }
 summary > * {
     margin: 0
@@ -338,6 +339,7 @@ summary::before, summary::after {
     text-align: right;
     transform: translateY(-50%);
     transition: transform 0.2s ease-in-out;
+    right: 1rem
 }
 summary::after {
     transform: translateY(-50%) rotate(90deg);
