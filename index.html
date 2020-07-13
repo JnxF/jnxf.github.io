@@ -1,141 +1,38 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<style>
-		body, html, pre, code {
-			margin: 0;
-			font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+		body,
+		html {
+			width: 100%;
+			height: 100%;
 		}
 
 		body {
-			background:#23241f;
-			padding:2em; 
-		}
-		.hljs {
-			display:block;
-		}
-		.hljs,
-		.hljs-tag,
-		.hljs-subst {
-			color:#f8f8f2
-		}
-		.hljs-strong,
-		.hljs-emphasis {
-			color:#a8a8a2
-		}
-		.hljs-bullet,
-		.hljs-quote,
-		.hljs-number,
-		.hljs-regexp,
-		.hljs-literal,
-		.hljs-link {
-			color:#ae81ff
-		}
-		.hljs-code,
-		.hljs-title,
-		.hljs-section,
-		.hljs-selector-class {
-			color:#a6e22e
-		}
-		.hljs-strong {
-			font-weight:bold
-		}
-		.hljs-emphasis {
-			font-style:italic
-		}
-		.hljs-keyword,
-		.hljs-selector-tag,
-		.hljs-name,
-		.hljs-attr {
-			color:#f92672
-		}
-		.hljs-symbol,
-		.hljs-attribute {
-			color:#66d9ef
-		}
-		.hljs-params,
-		.hljs-class .hljs-title {
-			color:#f8f8f2
-		}
-		.hljs-string,
-		.hljs-type,
-		.hljs-built_in,
-		.hljs-builtin-name,
-		.hljs-selector-id,
-		.hljs-selector-attr,
-		.hljs-selector-pseudo,
-		.hljs-addition,
-		.hljs-variable,
-		.hljs-template-variable {
-			color:#e6db74
-		}
-		.hljs-comment,
-		.hljs-deletion,
-		.hljs-meta {
-			color:#75715e
-		}
+			font-size: 18pt;
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			display: flex;
+			flex-direction: column;
 
-		a {
-			color:#e6db74!important
+			align-items: center;
+			justify-content: center;
+			text-align: center;
 		}
 	</style>
-	
 </head>
+
 <body>
-
-<div class="output">
-          <pre><code class="json hljs">{
-   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Francisco Martínez Lasaca"</span>,
-   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"ROS programmer and MSc Computer Science student"</span>,
-
-   <span class="hljs-attr">"info"</span>: {
-      <span class="hljs-attr">"ubication"</span>: <span class="hljs-string">"Copenhagen, Denmark"</span>,
-      <span class="hljs-attr">"work"</span>: <span class="hljs-string"><a href="https://square.itu.dk/">https://square.itu.dk/</a></span>,
-      <span class="hljs-attr">"github"</span>: <span class="hljs-string"><a href="https://github.com/jnxf">https://github.com/jnxf</a></span>,
-      <span class="hljs-attr">"linkedin"</span>: <span class="hljs-string"><a href="https://www.linkedin.com/in/fmlasaca/">https://www.linkedin.com/in/fmlasaca/</a></span>,
-      <span class="hljs-attr">"devpost"</span>: <span class="hljs-string"><a href="https://devpost.com/JnxF">https://devpost.com/JnxF</a></span>,
-      <span class="hljs-attr">"email"</span>: <span class="hljs-string">"me@fmlasaca.dev"</span>
-   },
-
-   <span class="hljs-attr">"education"</span>: [
-      {
-         <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Master in Computer Science"</span>,
-         <span class="hljs-attr">"university"</span>: <span class="hljs-string">"IT University of Copenhagen"</span>,
-         <span class="hljs-attr">"from"</span>: <span class="hljs-number">2019</span>,
-         <span class="hljs-attr">"to"</span>: <span class="hljs-literal">null</span>,
-         <span class="hljs-attr">"city"</span>: <span class="hljs-string">"Copenhagen"</span>
-      },
-
-      {
-         <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Bachelor Degree in Informatics Engineering"</span>,
-         <span class="hljs-attr">"university"</span>: <span class="hljs-string">"Polytechnical University of Catalonia"</span>,
-         <span class="hljs-attr">"from"</span>: <span class="hljs-number">2015</span>,
-         <span class="hljs-attr">"to"</span>: <span class="hljs-number">2019</span>,
-         <span class="hljs-attr">"city"</span>: <span class="hljs-string">"Barcelona"</span>
-      }
-   ],
-
-   <span class="hljs-attr">"work"</span>: [
-      {
-         <span class="hljs-attr">"title"</span>: <span class="hljs-string">"ROS Developer"</span>,
-         <span class="hljs-attr">"where"</span>: <span class="hljs-string">"IT University of Copenhagen, CS Department, SQUARE group"</span>,
-         <span class="hljs-attr">"from"</span>: <span class="hljs-string">"October 2019"</span>,
-         <span class="hljs-attr">"to"</span>: <span class="hljs-literal">null</span>
-      },
-
-      {
-         <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Full Stack Developer"</span>,
-         <span class="hljs-attr">"where"</span>: <span class="hljs-string">"inLab FIB"</span>,
-         <span class="hljs-attr">"from"</span>: <span class="hljs-string">"September 2017"</span>,
-         <span class="hljs-attr">"to"</span>: <span class="hljs-string">"January 2018"</span>
-      }
-   ]
-   
-}</code></pre>
-        </div>
+	<div>
+		<h1>Francisco Martínez Lasaca</h1>
+		<h2>[fɾän·ˈθis·ko mäɾ·ˈti·neθ lä·ˈsä·kä]</h2>
+	</div>
 
 </body>
+
 </html>
