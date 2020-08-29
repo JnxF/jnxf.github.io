@@ -16,6 +16,10 @@ p {
     line-height: 1.5;
 }
 
+aside h1 {
+    text-align: center;
+}
+
 h1 {
     margin: 0;
     margin-bottom: 1em;
@@ -94,7 +98,8 @@ article {
     margin-top: 1rem;
     padding-left: 1rem;
     border-left: 2px solid rgba(106, 106, 106, .5);
-
+    position: relative;
+    left: 2px;
 }
 
 section {
@@ -183,7 +188,7 @@ nav>a.active {
 
     aside {
         padding: 4rem;
-        width: 400px;
+        width: 410px;
     }
 }
 
@@ -191,6 +196,6 @@ nav>a.active {
 
     aside {
         padding: 4rem 5rem;
-        width: 600px;
+        width: 410px;
     }
 }
