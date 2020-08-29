@@ -41,7 +41,6 @@ img {
 }
 
 .me {
-    margin-top: 2rem;
     border-radius: 100%;
     margin-bottom: 2rem;
     max-width: 200px;
@@ -54,7 +53,7 @@ img {
 
 aside {
     background: #efefef;
-    padding: 2rem;
+    padding: 4rem 3rem;
     min-height: 100vh;
     width: 240px;
 }
@@ -181,7 +180,9 @@ nav>a.active {
 
 
 @media (min-width: 992px) {
+
     aside {
+        padding: 4rem;
         width: 400px;
     }
 }
@@ -189,6 +190,7 @@ nav>a.active {
 @media (min-width: 1200px) {
 
     aside {
+        padding: 4rem 5rem;
         width: 600px;
     }
 }
