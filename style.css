@@ -81,6 +81,7 @@ article {
 }
 
 .image img {
+    min-width: 3rem;
     width: 3rem;
     border-radius: 2px;
 }
@@ -135,7 +136,6 @@ nav>a.active {
 .language {
     display: flex;
     margin-bottom: .5rem;
-    margin-right: 2rem;
 }
 
 .language>div:nth-child(1) {
@@ -151,7 +151,6 @@ nav>a.active {
     flex: 1;
     display: flex;
     align-items: center;
-
 }
 
 .bar {
