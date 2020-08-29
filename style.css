@@ -144,27 +144,33 @@ nav>a.active {
 }
 
 .language>div:nth-child(2) {
-    min-width: 4rem;
-}
-
-.language>div:nth-child(3) {
     flex: 1;
     display: flex;
     align-items: center;
 }
 
-.bar {
-
-    height: .5rem;
+.bar-container {
     width: 100%;
+}
+
+.bar {
+    display: inline-block;
+    height: .5rem;
+    width: 14%;
     background: rgba(106, 106, 106, .5);
+    border-right: 2px solid white;
+}
+
+.lang-res {
+    display: inline-block;
+    margin-left: 1rem;
 }
 
 @media (max-width: 768px) {
     aside h1 {
         margin-bottom: .5rem;
     }
-    
+
     main {
         display: block
     }
@@ -188,7 +194,6 @@ nav>a.active {
 
 
 @media (min-width: 992px) {
-
     aside {
         padding: 4rem;
         width: 410px;
