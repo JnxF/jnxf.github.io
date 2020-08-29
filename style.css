@@ -161,6 +161,10 @@ nav>a.active {
 }
 
 @media (max-width: 768px) {
+    aside h1 {
+        margin-bottom: .5rem;
+    }
+    
     main {
         display: block
     }
