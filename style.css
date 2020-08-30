@@ -20,6 +20,15 @@ aside h1 {
     text-align: center;
 }
 
+aside .small {
+    margin: 0;
+    line-height: 1.75
+}
+
+aside .bi {
+    margin-right: 1ex
+}
+
 h1 {
     margin: 0;
     margin-bottom: 1em;
@@ -156,14 +165,14 @@ nav>a.active {
 .bar {
     display: inline-block;
     height: .5rem;
-    width: 15%;
+    width: 15.333%;
     background: rgba(106, 106, 106, .5);
     border-right: 2px solid white;
 }
 
 .lang-res {
     display: inline-block;
-    width: 10%;
+    width: 8%;
     height: 100%;
     text-align: right;
 }
