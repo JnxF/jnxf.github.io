@@ -156,14 +156,16 @@ nav>a.active {
 .bar {
     display: inline-block;
     height: .5rem;
-    width: 14%;
+    width: 15%;
     background: rgba(106, 106, 106, .5);
     border-right: 2px solid white;
 }
 
 .lang-res {
     display: inline-block;
-    margin-left: 1rem;
+    width: 10%;
+    height: 100%;
+    text-align: right;
 }
 
 @media (max-width: 768px) {
