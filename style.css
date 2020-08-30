@@ -25,6 +25,11 @@ aside .small {
     line-height: 1.75
 }
 
+.bi {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
 aside .bi {
     margin-right: 1ex
 }
