@@ -177,16 +177,20 @@ nav>a.active {
 .bar {
     display: inline-block;
     height: .5rem;
-    width: 15.333%;
+    width: 15%;
     background: rgba(106, 106, 106, .5);
     border-right: 2px solid white;
 }
 
+p.padded {
+    margin-left: 5rem;
+}
+
 .lang-res {
     display: inline-block;
-    width: 8%;
     height: 100%;
-    text-align: right;
+    text-align: left;
+    padding-left: 1ex;
 }
 
 @media (max-width: 768px) {
