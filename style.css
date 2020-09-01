@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
 }
 
 body {
@@ -80,7 +80,7 @@ aside {
     background: #efefef;
     padding: 4rem 3rem;
     min-height: 100vh;
-    width: 240px;
+    width: 300px;
 }
 
 article {
@@ -177,7 +177,7 @@ nav>a.active {
 .bar {
     display: inline-block;
     height: .5rem;
-    width: 15%;
+    width: 10%;
     background: rgba(106, 106, 106, .5);
     border-right: 2px solid white;
 }
@@ -194,6 +194,11 @@ p.padded {
 }
 
 @media (max-width: 768px) {
+
+    aside p.small {
+        display: inline-block;
+        margin-right: 1rem;
+    }
     aside h1 {
         margin-bottom: .5rem;
     }
@@ -211,10 +216,12 @@ p.padded {
 
     aside {
         text-align: center;
+        padding: 2rem 1rem;
     }
 
     .me {
         width: 8rem;
+        margin-bottom: 1rem;
         margin-top: 0
     }
 }
@@ -231,6 +238,6 @@ p.padded {
 
     aside {
         padding: 4rem 5rem;
-        width: 410px;
+        width: 600px;
     }
 }
