@@ -170,18 +170,6 @@ nav>a.active {
     align-items: center;
 }
 
-.bar-container {
-    width: 100%;
-}
-
-.bar {
-    display: inline-block;
-    height: .5rem;
-    width: 10%;
-    background: rgba(106, 106, 106, .5);
-    border-right: 2px solid white;
-}
-
 p.padded {
     margin-left: 5rem;
 }
