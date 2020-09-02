@@ -197,7 +197,7 @@ p.padded {
 
     aside p.small {
         display: inline-block;
-        margin-right: 1rem;
+        padding-right: 1rem;
     }
     aside h1 {
         margin-bottom: .5rem;
