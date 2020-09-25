@@ -12,7 +12,7 @@ main {
     display: flex;
 }
 
-p {
+p, li {
     line-height: 1.5;
 }
 
@@ -107,7 +107,7 @@ article {
     border-radius: 2px;
 }
 
-.mini-description,
+/* .mini-description, */
 .small {
     font-size: .8em;
 }
