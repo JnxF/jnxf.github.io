@@ -16,6 +16,22 @@
     }
 
     html {
+        font-size: 16px;
+    }
+    @media (min-width: 320px) {
+        html {
+            font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+        }
+    }
+    @media (min-width: 1000px) {
+        html {
+            font-size: 22px;
+        }
+    }
+
+    
+
+    html {
         margin: 0;
         padding: 0
     }
@@ -55,7 +71,7 @@
     }
 
     h1 {
-        font-size: 2.25rem;
+        font-size: 1.7rem;
     }
 
     .red {
@@ -63,7 +79,7 @@
     }
 
     .xl {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .icons {
@@ -73,7 +89,7 @@
 
     .icon {
         margin-left: 1em;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: white;
         background: var(--main-accent);
         padding: .5rem;
@@ -104,7 +120,7 @@
 
     .title {
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         line-height: 1.4;
     }
 </style>
