@@ -31,6 +31,13 @@
         }
     }
 
+    .small {display: block}
+    .big {display: none}
+    @media (min-width: 600px) {
+        .small {display: none}
+        .big {display: block}
+    }
+
     html {
         margin: 0;
         padding: 0
@@ -132,7 +139,11 @@
             <span class="red">Francisco</span><br>
             Martínez Lasaca
         </h1>
-        <p class="xl title">
+        <p class="xl title small">
+            ROS Student Researcher and TA
+            at the IT University of Copenhagen
+        </p>
+        <p class="xl title big">
             ROS Student Researcher and TA<br>
             at the IT University of Copenhagen
         </p>
