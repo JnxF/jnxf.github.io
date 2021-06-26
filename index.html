@@ -5,17 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Francisco Martínez Lasaca</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Castoro&family=Catamaran:wght@700&family=Libre+Franklin:wght@300;600&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
 
     <style>
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         line-height: 1.7;
         color: #21201e;
+        margin: 0;
+        padding: 0;
       }
 
       nav {
@@ -84,11 +94,22 @@
         flex: 3;
       }
 
-      .nasa {
+      .nasa::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         background-image: url("sky.jpg");
+        filter: brightness(100%);
         background-size: cover;
-        background-color: #071213;
+        background-color: #0b090e;
+      }
+
+      .nasa {
         color: white;
+        position: relative;
       }
 
       .container {
@@ -102,6 +123,7 @@
         display: flex;
         align-items: flex-end;
         justify-content: end;
+        position: relative;
       }
 
       .bi {
@@ -135,16 +157,19 @@
       .aside {
         width: 15em;
         position: absolute;
-        top: -120px;
+        top: calc(-120px - 2rem);
       }
 
       img {
         max-width: 100%;
+        border-radius: 50%;
+        box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+        background-color: #e2f3b4;
       }
       .runningText {
         margin-top: 2rem;
         margin-left: 40%;
-        font-family: Georgia, "Times New Roman", Times, serif;
+        font-family: Castoro, Georgia, "Times New Roman", Times, serif;
       }
     </style>
 
@@ -208,19 +233,33 @@
       <div class="one-third nasa">
         <div class="container bottom">
           <div class="header">
-            <h1>Francisco Martínez Lasaca</h1>
+            <h1>
+              Francisco Martínez Lasaca<sup style="font-size: 0.5em">1</sup>
+            </h1>
             <h2>Industrial PhD Student</h2>
           </div>
         </div>
       </div>
 
-      <div class="two-thirds">
+      <div class="two-thirds" style="background-color: #46141414">
         <div class="container" style="position: relative">
           <div class="aside">
-            <img src="yo.png" alt="" />
+            <img src="yo.png" alt="Francisco Martinez Lasaca's avatar" />
 
             <p class="links">
-              <a href="https://www.linkedin.com/in/fmlasaca/"
+              <a href="https://twitter.com/fmlasaca">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-twitter"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  /></svg></a
+              ><a href="https://www.linkedin.com/in/fmlasaca/"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -254,8 +293,8 @@
             <p>
               I am a PhD student at the Autonomous University of Madrid, Spain.
               I pursue my doctoral studies in collaboration with the company
-              UGROUND, and within the Marie Skłodowska-Curie
-              <em>Lowcomote</em> project.
+              UGROUND, and within Lowcomote, a Marie Skłodowska-Curie Lowcomote
+              project.
             </p>
 
             <p>
@@ -269,6 +308,14 @@
               Engineering. Specifically, on how to lower the entry barrier to
               domain-specific languages (DSLs), either textual- or
               graphical-based.
+            </p>
+
+            <p>
+              <sup style="font-size: 0.75em">1</sup> Approximation for
+              anglophones:
+              <span style="font-family: Georgia"
+                >[fɹɑnˈθiskəʊ mɑːtiˈneθ lɑˈsɑkə]</span
+              >, with θ as in <u>th</u>ing.
             </p>
           </div>
         </div>
