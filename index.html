@@ -63,16 +63,17 @@
       }
 
       h1 {
-        font-size: 50px;
+        font-size: 3rem;
         margin: 0;
         padding: 0;
+        line-height: 1.1;
       }
 
       h2 {
-        font-size: 26px;
+        font-size: 2rem;
         margin: 0;
         padding: 0;
-        font-weight: 400;
+        font-weight: 200;
       }
 
       .one-third {
@@ -108,20 +109,71 @@
         height: 1em;
       }
       .header {
+        margin-top: 1rem;
         margin-bottom: 1rem;
         width: 60%;
         text-shadow: 0 0 0.5rem black;
+      }
+
+      .links a:first-child {
+        margin-left: 0 !important;
       }
       .links a {
         text-decoration: none !important;
         color: #461414;
         display: inline-block;
-        margin-right: 1rem;
+        margin-left: 1rem;
         font-size: 1.5rem;
       }
 
       .links {
         text-align: center;
+        margin: 0;
+        margin-top: 0.5rem;
+      }
+
+      .aside {
+        width: 15em;
+        position: absolute;
+        top: -120px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+      .runningText {
+        margin-top: 2rem;
+        margin-left: 40%;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+    </style>
+
+    <!-- Responsive -->
+    <style>
+      @media (max-width: 800px) {
+        h1 {
+          font-size: calc(2rem / 1.2);
+        }
+
+        h2 {
+          font-size: calc(1.33rem / 1.2);
+        }
+        .header {
+          width: 100%;
+        }
+
+        .aside {
+          position: initial;
+          width: 8rem;
+          margin-top: 0rem;
+          float: left;
+          margin-right: 2rem;
+        }
+
+        .runningText {
+          margin: 0;
+          width: 100%;
+        }
       }
     </style>
   </head>
@@ -150,8 +202,8 @@
 
       <div class="two-thirds">
         <div class="container" style="position: relative">
-          <div style="width: 15em; position: absolute; top: -120px">
-            <img src="yo.png" alt="" style="width: 100%" />
+          <div class="aside">
+            <img src="yo.png" alt="" />
 
             <p class="links">
               <a href="https://www.linkedin.com/in/fmlasaca/"
@@ -184,13 +236,7 @@
             </p>
           </div>
 
-          <div
-            style="
-              margin-top: 2rem;
-              margin-left: 40%;
-              font-family: Georgia, 'Times New Roman', Times, serif;
-            "
-          >
+          <div class="runningText">
             <p>
               I am a PhD student at the Autonomous University of Madrid, Spain.
               I pursue my doctoral studies in colaboration with the company
