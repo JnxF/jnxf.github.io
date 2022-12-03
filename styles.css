@@ -165,9 +165,7 @@ button:active {
 
 /* Now with showFancy */
 .showFancy .json {
-  opacity: 0;
-  width: 0;
-  display: inline-block;
+  display: none;
 }
 
 .showFancy .tableLike {
