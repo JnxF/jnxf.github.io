@@ -52,7 +52,7 @@ body,
 .Main {
   grid-area: Main;
   overflow-y: auto;
-  padding: 2rem 5rem;
+  padding: 3rem;
 }
 
 #root {
@@ -82,10 +82,6 @@ body,
 
   .Left {
     display: none;
-  }
-
-  .Main {
-    padding: 2rem 1rem 0 1rem;
   }
 }
 
@@ -147,6 +143,7 @@ button:active {
 
 .line {
   display: table-row;
+  margin-top: 1rem;
 }
 
 .line > * {
@@ -175,7 +172,7 @@ button:active {
 .showFancy .tableLike {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1em;
 }
 
 .showFancy .tableLike > .line {

@@ -26,6 +26,9 @@ const data = {
 };
 
 function processUnknownJsonElement(o) {
+  if (o === null) {
+    return processPrimitive(o);
+  }
   if (typeof o === "object") {
     if (Array.isArray(o)) {
       return processArray(o);
@@ -35,6 +38,15 @@ function processUnknownJsonElement(o) {
   } else {
     return processPrimitive(o);
   }
+}
+
+function primitiveToText(o) {
+  if (o === null) return "null";
+  if (o === undefined) return "undefined";
+  if (typeof o === "string") return o;
+  if (typeof o === "number") return o.toString();
+  if (typeof o === "boolean") return o.toString();
+  return o.toString();
 }
 
 function processPrimitive(o) {
@@ -49,7 +61,7 @@ function processPrimitive(o) {
   closeQuotesSpan.classList.add("json");
 
   // Whatever o is, we want to display it as a string
-  const oAsString = o.toString();
+  const oAsString = primitiveToText(o);
 
   // If it seems like a URL, make it a link
   if (oAsString.startsWith("http")) {
@@ -59,7 +71,7 @@ function processPrimitive(o) {
     a.target = "_blank";
     div.appendChild(a);
   } else {
-    div.innerText = o;
+    div.innerText = oAsString
   }
 
   div.prepend(openQuotesSpan);
