@@ -163,6 +163,10 @@ button:active {
   font-weight: 550;
 }
 
+.tableLike > .line > *:nth-child(2) {
+  border-left: 0.2em solid transparent;
+}
+
 /* Now with showFancy */
 .showFancy .json {
   display: none;
@@ -171,7 +175,7 @@ button:active {
 .showFancy .tableLike {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 2em;
 }
 
 .showFancy .tableLike > .line {
@@ -191,7 +195,9 @@ button:active {
   padding: 1em;
   display: block;
   background: rgba(0, 0, 0, 0.02);
-  border-left: 0.2em solid var(--primary);
+  border-left-color: var(--primary);
+  /* transition all, but delay the border */
+  transition: all 1s ease-in-out, border-left-color 0.25s ease-in-out 0.75s !important;
 }
 
 .showFancy .arrayEntry {
