@@ -2,7 +2,7 @@ const data = {
   me: "Francisco Martínez Lasaca",
   title: "Industrial PhD Student",
   twitter: "https://twitter.com/fmlasaca",
-  linkedin: "https://www.linkedin.com/in/fmlasaca/",
+  linkedin: "https://www.linkedin.com/in/fmlasaca",
   mastodon: "https://techhub.social/@fmlasaca",
   description:
     "I am a doctoral student in Computer Science at the Autonomous University of Madrid (UAM), Spain. My Ph.D. is entitled 'Scalable Cloud-Based Heterogeneous Modelling,' and it is part of the Marie Skłodowska-Curie European project Lowcomote. The project is carried out in cooperation with the Madrid-based company UGROUND.",
